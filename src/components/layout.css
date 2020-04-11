@@ -1,0 +1,157 @@
+html {
+  background-color: #EAE7DC;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #FF715B;
+}
+
+a:visited {
+  color: #FF715B;
+}
+
+a:hover {
+  color: #D15D4B;
+}
+
+a:active {
+  color: #D15D4B;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: .3rem solid #32292F;
+  box-shadow: 0em .2rem #B4B1B3;
+}
+
+header h3 {
+  margin: 1rem;
+}
+
+header h4 {
+  margin: 1rem;
+  margin-left: auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.posts{
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.posts li{
+  width: 80vw;
+  min-height: 12vh;
+  border: .1em solid #32292F;
+  background-color: #e6e6e6;
+  margin: 1rem;
+  list-style-type: none;
+  border-radius: .25rem;
+  box-shadow: .1rem .25rem #B4B1B3;
+}
+
+.postsHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: .5em 1em 0em 1em;
+}
+
+.postsHeader p {
+  margin-left: auto;
+  font-size: 90%;
+}
+
+.postsTags {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.postsTags button {
+  margin-bottom: .5em;
+  margin-right: 1em;
+  border-radius: 30%;
+  font-size: 70%;
+  color: black;
+  background-color: #EAE7DC;
+  box-shadow: .01rem .05rem #B4B1B3;
+  font-weight: bold;
+}
+
+.postsExcerpt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .5em 1em 0 1em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70%;
+}
+
+h1 {
+  align-items: left;
+}
+
+.notfound {
+  margin: 1rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 0 0;
+}
+
+.about p {
+  width: 70vw;
+}
+
+.about h1 {
+  margin: .1rem;
+}
+
+.post {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
