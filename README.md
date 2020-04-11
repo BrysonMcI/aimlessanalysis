@@ -1,4 +1,7 @@
 # Aimless Analysis
+
+[https://aimlessanalysis.com/](https://aimlessanalysis.com/)
+
 This repo contains the gatsby setup and markdown for my blog, Aimless Analysis
 
 You can find the blog post .mdx files in /content while the rest of this repo generally is for the gatsby code
