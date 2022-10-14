@@ -22,6 +22,7 @@
     "typography-theme-noriega": "^0.16.19"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   },
   "scripts": {
@@ -30,6 +31,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && echo 'aimlessanalysis.com' > ./public/CNAME && gh-pages -d public",
+    "deploy:ci": "gatsby build && echo 'aimlessanalysis.com' > ./public/CNAME && gh-pages -d public -r https://$GH_TOKEN@github.com/BrysonMcI/aimlessanalysis.git"
   }
 }
