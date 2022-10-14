@@ -38,9 +38,7 @@ module.exports = {
           // Puts tracking script in the head instead of the body
           head: false,
           // I just want to know how many people visit
-          respectDNT: false,
-          // Defaults to https://www.googletagmanager.com
-          origin: "https://aimlessanalysis.com/",
+          respectDNT: false
         },
       },
     }
