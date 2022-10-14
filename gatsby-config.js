@@ -19,17 +19,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-mdx`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-163406573-1",
-        anonymize: true,
-        respectDNT: true,
-        pageTransitionDelay: 0,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

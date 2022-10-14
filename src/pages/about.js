@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 
 export const query = graphql`
   query {
@@ -16,9 +16,9 @@ export const query = graphql`
   }
 `
 
-export default ({ data }) => (
+const About = ({ data }) => (
   <Layout>
-    <SEO title="About" />
+    <Seo title="About" />
     <div className="about">
       <h1>About {data.site.siteMetadata.title}</h1>
       <p>
@@ -45,3 +45,4 @@ export default ({ data }) => (
     </div>
   </Layout>
 )
+export default About;

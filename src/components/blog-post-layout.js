@@ -1,23 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 
 import Layout from "./layout"
-import SEO from "./seo"
+import Seo from "./Seo"
 
 const shortcodes = { Link }
 
-export default function PageTemplate({ data: { mdx } }) {
+export default function PageTemplate({ data: { mdx }, children }) {
   return (
     <Layout>
-        <SEO title={mdx.frontmatter.title} />
+        <Seo title={mdx.frontmatter.title} />
         <div className="post">
         <h1>{mdx.frontmatter.title}</h1>
         <p>{mdx.frontmatter.author} - {mdx.frontmatter.date}</p>
         <MDXProvider components={shortcodes}>
-            <MDXRenderer>{mdx.body}</MDXRenderer>
+            {children}
         </MDXProvider>
         </div>
     </Layout>
@@ -25,10 +24,9 @@ export default function PageTemplate({ data: { mdx } }) {
 }
 
 export const pageQuery = graphql`
-  query BlogPostQuery($id: String) {
+  query PostTemplate($id: String!) {
     mdx(id: { eq: $id }) {
       id
-      body
       frontmatter {
         title
         author

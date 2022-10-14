@@ -2,13 +2,13 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 
 const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allMdx
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <div>
         <ul className="posts">
           {posts.map(({ node: post }) => (
