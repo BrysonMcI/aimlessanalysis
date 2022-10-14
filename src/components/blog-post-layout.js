@@ -4,7 +4,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { Link } from "gatsby"
 
 import Layout from "./layout"
-import Seo from "./Seo"
+import Seo from "./seo"
 
 const shortcodes = { Link }
 
