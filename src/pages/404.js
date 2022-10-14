@@ -2,7 +2,7 @@ import React from "react"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import Layout from "../components/layout"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>

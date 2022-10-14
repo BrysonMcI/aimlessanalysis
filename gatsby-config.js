@@ -37,8 +37,8 @@ module.exports = {
         pluginConfig: {
           // Puts tracking script in the head instead of the body
           head: false,
-          // Setting this parameter is also optional
-          respectDNT: true,
+          // I just want to know how many people visit
+          respectDNT: false,
           // Defaults to https://www.googletagmanager.com
           origin: "https://aimlessanalysis.com/",
         },

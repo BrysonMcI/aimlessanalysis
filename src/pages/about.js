@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import Layout from "../components/layout"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 
 export const query = graphql`
   query {
