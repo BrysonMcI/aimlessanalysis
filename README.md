@@ -2,7 +2,7 @@
 
 [https://aimlessanalysis.com/](https://aimlessanalysis.com/)
 
-This repo contains the gatsby setup and markdown for my blog, Aimless Analysis
+This repo contains the old gatsby setup and markdown for my blog, Aimless Analysis. All the old posts are now on substack (at the same domain) as well as new content.
 
 You can find the blog post .mdx files in /content while the rest of this repo generally is for the gatsby code
 
